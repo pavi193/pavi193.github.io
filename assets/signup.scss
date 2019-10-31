@@ -1,0 +1,124 @@
+@import 'login.scss';
+.container{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    left: 378px;
+    top: 100px;
+    background: $containerColor;
+    border-radius: 10px;
+    z-index: 1;
+
+    .content{
+        font-family: Roboto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px 40px 0px 40px;
+
+        h1{
+            font-style: normal;
+            font-weight: 200;
+            font-size: 38px;
+            text-align: center;
+            color: #FFFFFF;
+        
+            .spanish{
+                font-size: 32px;
+                color: #828282;
+            }
+        }
+
+       
+        
+        input{
+            display: flex;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 50px;
+            color: rgba(255, 255, 255, 0.8);
+            border: none;
+            outline: none;
+            background: transparent;
+            border-bottom: 2px solid #2D9CDB;
+    
+        }
+
+        h3{
+           
+            font-style: normal;
+            font-weight: normal;
+            font-size: 19px;
+            line-height: 15px;
+            color: rgba(255, 255, 255, 0.8);
+            padding-left: 40px;
+        }
+
+        .condition{
+            width: auto;
+        }
+
+        .radio1{
+            // height: 20px;
+            // width: 13px;
+            // border-radius: 50%;
+            // border: none;
+            // display: block;
+            // position: absolute;
+            right: 88.5%;
+            // top: -4px;
+            bottom: 13%;
+        }
+
+        .radio2{
+            // height: 20px;
+            // width: 13px;
+            // border-radius: 50%;
+            // border: none;
+            // display: block;
+            // position: absolute;
+            right: 88.5%;
+            // top: -4px;
+            bottom: 3%;
+        }
+
+        input [type="checkbox"]{
+            width: 4px;
+            height: 20px;
+            outline: none;
+            transition: .5s;
+        }
+
+        input [type="checkbox"]::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #2D9CDB;
+        }
+
+    
+
+    }
+
+    
+
+}
+
+
+
+button{
+    position: absolute;
+    width: 320px;
+    height: 50px;
+    right: 15.8%;
+    border: none;
+    background: $buttonColor;
+}
+
+.col{
+    columns: 2;
+    column-gap: 5em;
+}

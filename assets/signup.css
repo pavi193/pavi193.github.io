@@ -59,6 +59,20 @@
   color: #828282;
 }
 
+.container .content input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 60px;
+  color: rgba(255, 255, 255, 0.8);
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid #2D9CDB;
+}
+
 .container .content h3 {
   width: auto;
   font-style: normal;
@@ -66,6 +80,17 @@
   font-size: 20px;
   line-height: 60px;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.radio {
+  height: 20px;
+  width: 16px;
+  border-radius: 50%;
+  border: none;
+  display: block;
+  position: absolute;
+  right: 28%;
+  bottom: 28.8%;
 }
 
 button {
@@ -599,4 +624,116 @@ button {
     background: #FF7A05;
   }
 }
-/*# sourceMappingURL=login.css.map */
+
+.container {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  left: 378px;
+  top: 100px;
+  background: rgba(0, 0, 0, 0.66);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.container .content {
+  font-family: Roboto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 40px 0px 40px;
+}
+
+.container .content h1 {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 38px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.container .content h1 .spanish {
+  font-size: 32px;
+  color: #828282;
+}
+
+.container .content input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 50px;
+  color: rgba(255, 255, 255, 0.8);
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid #2D9CDB;
+}
+
+.container .content h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.8);
+  padding-left: 40px;
+}
+
+.container .content .condition {
+  width: auto;
+}
+
+.container .content .radio1 {
+  right: 88.5%;
+  bottom: 13%;
+}
+
+.container .content .radio2 {
+  right: 88.5%;
+  bottom: 3%;
+}
+
+.container .content input [type="checkbox"] {
+  width: 4px;
+  height: 20px;
+  outline: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.container .content input [type="checkbox"]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #2D9CDB;
+}
+
+button {
+  position: absolute;
+  width: 320px;
+  height: 50px;
+  right: 15.8%;
+  border: none;
+  background: #FF7A05;
+}
+
+.col {
+  -webkit-columns: 2;
+          columns: 2;
+  -webkit-column-gap: 5em;
+          column-gap: 5em;
+}
+/*# sourceMappingURL=signup.css.map */
