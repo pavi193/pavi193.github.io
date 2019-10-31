@@ -1,9 +1,10 @@
+// This are the colors variables
 $buttonColor: #FF7A05;
 $overLayedColor: rgba(6, 44, 81, 0.67);
 $containerColor: rgba(0, 0, 0, 0.66);
 $inputColor: #2D9CDB;
 
-    
+// image background
 .imgOverLay{
     background: #000 url(../img/fun1.jpg);
     background-repeat: no-repeat;
@@ -16,7 +17,7 @@ $inputColor: #2D9CDB;
     left: -1px;
     top: 0px;
  }
-
+// Overlayed Image color
  .imgOverLay::after{
     content: "";
     display: block;
@@ -30,7 +31,7 @@ $inputColor: #2D9CDB;
     opacity: 1.7;
     
 }
-
+// container for Opacity of Forms
 .container{
     position: relative;
     width: 450px;
@@ -40,14 +41,14 @@ $inputColor: #2D9CDB;
     background: $containerColor;
     border-radius: 10px;
     z-index: 1;
-
+// content on the opacity
     .content{
         font-family: Roboto;
         display: flex;
         justify-content: space-around;
         align-items: center;
         
-
+// Styles for h1 content
         h1{
             font-style: normal;
             font-weight: 200;
@@ -60,7 +61,7 @@ $inputColor: #2D9CDB;
                 color: #828282;
             }
         }
-        
+ // input Form       
         input{
             display: flex;
             font-weight: normal;
@@ -110,7 +111,7 @@ button{
     border: none;
     background: $buttonColor;
 }
-
+//////////////////////////////// media queris rules //////////////////////////////////////////////////////
 @media screen and (max-width: 1200px) {
     .container{
         position: relative;
@@ -613,15 +614,6 @@ button{
 }
 
 
-//  320px
-// 480px
-// 600px
-// 768px
-// 900px
-// 1024px
-// 1200px
-
-
  @media screen and (max-width: 320px){
 
     .container{
@@ -706,3 +698,4 @@ button{
            }
 
 }
+//////////////////////////         End of Media query rules for responsiveness /////////////////////////////
