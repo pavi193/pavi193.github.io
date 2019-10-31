@@ -7,6 +7,7 @@ $inputColor: #2D9CDB;
 .imgOverLay{
     background: #000 url(../img/fun1.jpg);
     background-repeat: no-repeat;
+    overflow: hidden;
     background-size: cover;
     background-attachment: fixed;
     position: absolute;
@@ -34,7 +35,7 @@ $inputColor: #2D9CDB;
     position: relative;
     width: 450px;
     height: 450px;
-    left: 440px;
+    left: 465px;
     top: 140px;
     background: $containerColor;
     border-radius: 10px;
@@ -61,15 +62,15 @@ $inputColor: #2D9CDB;
         }
         
         input{
-            // display: flex;
-            // font-weight: normal;
-            // font-size: 25px;
-            // line-height: 60px;
-            // color: rgba(255, 255, 255, 0.8);
-            // border: none;
-            // outline: none;
-            // background: transparent;
-            // border-bottom: 2px solid #2D9CDB;
+            display: flex;
+            font-weight: normal;
+            font-size: 25px;
+            line-height: 60px;
+            color: rgba(255, 255, 255, 0.8);
+            border: none;
+            outline: none;
+            background: transparent;
+            border-bottom: 2px solid #2D9CDB;
     
         }
 
@@ -89,17 +90,17 @@ $inputColor: #2D9CDB;
 
 }
 
-// .radio{
-//     height: 20px;
-//     width: 16px;
-//     border-radius: 50%;
-//     border: none;
-//     display: block;
-//     position: absolute;
-//     right: 28%;
-//     // top: -4px;
-//     bottom: 28.8%;
-// }
+.radio{
+    height: 20px;
+    width: 16px;
+    border-radius: 50%;
+    border: none;
+    display: block;
+    position: absolute;
+    right: 28%;
+    // top: -4px;
+    bottom: 28.8%;
+}
 
 button{
     position: absolute;
