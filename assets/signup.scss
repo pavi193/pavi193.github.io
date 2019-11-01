@@ -1,4 +1,38 @@
-@import 'login.scss';
+// @import '../assets/login.scss';
+
+// This are the colors variables
+$buttonColor: #FF7A05;
+$overLayedColor: rgba(6, 44, 81, 0.67);
+$containerColor: rgba(0, 0, 0, 0.66);
+$inputColor: #2D9CDB;
+
+// image background
+.imgOverLay{
+    background: #000 url(../img/fun1.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -1px;
+    top: 0px;
+ }
+// Overlayed Image color
+ .imgOverLay::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: $overLayedColor;
+    position: absolute;
+    height: 100%;
+    left: 1px;
+    top: 0px;
+    opacity: 1.7;
+    
+}
 .container{
     position: relative;
     width: fit-content;
@@ -20,6 +54,8 @@
             font-style: normal;
             font-weight: 200;
             font-size: 38px;
+            cursor: pointer;
+            padding: 20px 0px  10px 0px;
             text-align: center;
             color: #FFFFFF;
         
@@ -106,6 +142,13 @@ button{
 .col{
     columns: 2;
     column-gap: 5em;
+}
+
+#login{
+    
+    font-weight: 500;
+    font-size: 19px;
+    color: #B7ACAC;
 }
 
 
@@ -356,6 +399,7 @@ button{
                 font-style: normal;
                 font-weight: 200;
                 font-size: 38px;
+                padding: 20px 0px  20px 0px;
                 text-align: center;
                 color: #FFFFFF;
             
@@ -461,12 +505,13 @@ button{
             display: flex;
             justify-content: space-around;
             align-items: center;
-            padding: 0px 40px 0px 40px;
+           
     
             h1{
                 font-style: normal;
                 font-weight: 200;
                 font-size: 38px;
+                padding: 18px 0px  18px 0px;
                 text-align: center;
                 color: #FFFFFF;
             
@@ -580,6 +625,7 @@ button{
                 font-weight: 200;
                 font-size: 30px;
                 text-align: center;
+                padding: 18px 0px  18px 0px;
                 color: #FFFFFF;
             
                 .spanish{
@@ -685,12 +731,12 @@ button{
             display: flex;
             justify-content: space-around;
             align-items: center;
-            padding: 0px 40px 0px 40px;
     
             h1{
                 font-style: normal;
                 font-weight: 200;
                 font-size: 22px;
+                padding: 10px 0px  10px 0px;
                 text-align: center;
                 color: #FFFFFF;
             
@@ -776,6 +822,13 @@ button{
 
     .col{
         display: grid;
+    }
+
+    #login{
+    
+        font-weight: 500;
+        font-size: 14px;
+        color: #B7ACAC;
     }
 }
 
@@ -883,5 +936,12 @@ button{
 
     .col{
         display: grid;
+    }
+
+    #login{
+    
+        font-weight: 500;
+        font-size: 11px;
+        color: #B7ACAC;
     }
 }

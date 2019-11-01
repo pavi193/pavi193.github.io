@@ -53,6 +53,7 @@
   font-size: 38px;
   padding: 20px 0px  10px 0px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .container .content h1 .spanish {
@@ -101,6 +102,12 @@ button {
   right: 15.8%;
   border: none;
   background: #FF7A05;
+}
+
+#signup {
+  font-weight: 500;
+  font-size: 19px;
+  color: #B7ACAC;
 }
 
 @media screen and (max-width: 1200px) {
@@ -549,6 +556,11 @@ button {
     border: none;
     background: #FF7A05;
   }
+  #signup {
+    font-weight: 500;
+    font-size: 14px;
+    color: #B7ACAC;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -623,6 +635,10 @@ button {
     right: 12%;
     border: none;
     background: #FF7A05;
+  }
+  #signup {
+    font-size: 12px;
+    color: #B7ACAC;
   }
 }
 /*# sourceMappingURL=login.css.map */
