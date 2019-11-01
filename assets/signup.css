@@ -125,6 +125,7 @@ button {
   height: 50px;
   right: 15.8%;
   bottom: 30px;
+  cursor: pointer;
   border: none;
   background: #FF7A05;
 }
