@@ -1,0 +1,857 @@
+.imgOverLay {
+  background: #000 url(../img/fun1.jpg);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -1px;
+  top: 0px;
+}
+
+.imgOverLay::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(6, 44, 81, 0.67);
+  position: absolute;
+  height: 100%;
+  left: 1px;
+  top: 0px;
+  opacity: 1.7;
+}
+
+.container {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 480px;
+  left: 390px;
+  top: 100px;
+  background: rgba(0, 0, 0, 0.66);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.container .content {
+  font-family: Roboto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 40px 0px 40px;
+}
+
+.container .content h1 {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 38px;
+  cursor: pointer;
+  padding: 20px 0px  10px 0px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.container .content h1 .spanish {
+  font-size: 32px;
+  color: #828282;
+}
+
+.container .content input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 50px;
+  color: rgba(255, 255, 255, 0.8);
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid #2D9CDB;
+}
+
+.container .content h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.8);
+  padding-left: 40px;
+}
+
+.container .content .radio1 {
+  height: 20px;
+  width: 13px;
+  border-radius: 50%;
+  border: none;
+  display: block;
+  position: absolute;
+  right: 88.5%;
+  bottom: 32%;
+}
+
+.container .content .radio2 {
+  height: 20px;
+  width: 13px;
+  border-radius: 50%;
+  border: none;
+  display: block;
+  position: absolute;
+  right: 88.5%;
+  bottom: 25%;
+}
+
+a {
+  text-decoration: none;
+  color: #2D9CDB;
+}
+
+a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+button {
+  position: absolute;
+  width: 350px;
+  height: 50px;
+  right: 15.8%;
+  bottom: 30px;
+  cursor: pointer;
+  border: none;
+  background: #FF7A05;
+}
+
+.col {
+  -webkit-columns: 2;
+          columns: 2;
+  -webkit-column-gap: 5em;
+          column-gap: 5em;
+}
+
+#login {
+  font-weight: 500;
+  font-size: 19px;
+  color: #B7ACAC;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 480px;
+    left: 390px;
+    top: 100px;
+    background: rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .container .content {
+    font-family: Roboto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 40px 0px 40px;
+  }
+  .container .content h1 {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 38px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .container .content h1 .spanish {
+    font-size: 32px;
+    color: #828282;
+  }
+  .container .content input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #2D9CDB;
+  }
+  .container .content h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-left: 40px;
+  }
+  .container .content .radio1 {
+    height: 20px;
+    width: 13px;
+    border-radius: 50%;
+    border: none;
+    display: block;
+    position: absolute;
+    right: 88.5%;
+    bottom: 32%;
+  }
+  .container .content .radio2 {
+    height: 20px;
+    width: 13px;
+    border-radius: 50%;
+    border: none;
+    display: block;
+    position: absolute;
+    right: 88.5%;
+    bottom: 25%;
+  }
+  a {
+    text-decoration: none;
+    color: #2D9CDB;
+  }
+  a:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  button {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    right: 15.8%;
+    bottom: 30px;
+    border: none;
+    background: #FF7A05;
+  }
+  .col {
+    -webkit-columns: 2;
+            columns: 2;
+    -webkit-column-gap: 5em;
+            column-gap: 5em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 480px;
+    left: 250px;
+    top: 100px;
+    background: rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .container .content {
+    font-family: Roboto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 40px 0px 40px;
+  }
+  .container .content h1 {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 38px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .container .content h1 .spanish {
+    font-size: 32px;
+    color: #828282;
+  }
+  .container .content input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #2D9CDB;
+  }
+  .container .content h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-left: 40px;
+  }
+  .container .content .radio1 {
+    height: 20px;
+    width: 13px;
+    border-radius: 50%;
+    border: none;
+    display: block;
+    position: absolute;
+    right: 88.5%;
+    bottom: 32%;
+  }
+  .container .content .radio2 {
+    height: 20px;
+    width: 13px;
+    border-radius: 50%;
+    border: none;
+    display: block;
+    position: absolute;
+    right: 88.5%;
+    bottom: 25%;
+  }
+  a {
+    text-decoration: none;
+    color: #2D9CDB;
+  }
+  a:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  button {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    right: 15.8%;
+    bottom: 30px;
+    border: none;
+    background: #FF7A05;
+  }
+  .col {
+    -webkit-columns: 2;
+            columns: 2;
+    -webkit-column-gap: 5em;
+            column-gap: 5em;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 480px;
+    left: 145px;
+    top: 100px;
+    background: rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .container .content {
+    font-family: Roboto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 40px 0px 40px;
+  }
+  .container .content h1 {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 38px;
+    padding: 20px 0px  20px 0px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .container .content h1 .spanish {
+    font-size: 32px;
+    color: #828282;
+  }
+  .container .content input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #2D9CDB;
+  }
+  .container .content h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-left: 40px;
+  }
+  .container .content .radio1 {
+    height: 20px;
+    width: 13px;
+    border-radius: 50%;
+    border: none;
+    display: block;
+    position: absolute;
+    right: 88.5%;
+    bottom: 30%;
+  }
+  .container .content .radio2 {
+    height: 20px;
+    width: 13px;
+    border-radius: 50%;
+    border: none;
+    display: block;
+    position: absolute;
+    right: 88.5%;
+    bottom: 23%;
+  }
+  a {
+    text-decoration: none;
+    color: #2D9CDB;
+  }
+  a:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  button {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    right: 15.8%;
+    bottom: 30px;
+    border: none;
+    background: #FF7A05;
+  }
+  .col {
+    -webkit-columns: 2;
+            columns: 2;
+    -webkit-column-gap: 5em;
+            column-gap: 5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 480px;
+    left: 100px;
+    top: 100px;
+    background: rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .container .content {
+    font-family: Roboto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .content h1 {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 38px;
+    padding: 18px 0px  18px 0px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .container .content h1 .spanish {
+    font-size: 32px;
+    color: #828282;
+  }
+  .container .content input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #2D9CDB;
+  }
+  .container .content h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-left: 40px;
+  }
+  .container .content .radio1 {
+    height: 20px;
+    width: 13px;
+    border-radius: 50%;
+    border: none;
+    display: block;
+    position: absolute;
+    right: 88.5%;
+    bottom: 30.5%;
+  }
+  .container .content .radio2 {
+    height: 20px;
+    width: 13px;
+    border-radius: 50%;
+    border: none;
+    display: block;
+    position: absolute;
+    right: 88.5%;
+    bottom: 23.5%;
+  }
+  a {
+    text-decoration: none;
+    color: #2D9CDB;
+  }
+  a:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  button {
+    position: absolute;
+    width: 350px;
+    height: 50px;
+    right: 15.8%;
+    bottom: 30px;
+    border: none;
+    background: #FF7A05;
+  }
+  .col {
+    -webkit-columns: 2;
+            columns: 2;
+    -webkit-column-gap: 5em;
+            column-gap: 5em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    position: relative;
+    overflow: hidden;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 590px;
+    left: 100px;
+    top: 50px;
+    background: rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .container .content {
+    font-family: Roboto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 40px 0px 40px;
+  }
+  .container .content h1 {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+    text-align: center;
+    padding: 18px 0px  18px 0px;
+    color: #FFFFFF;
+  }
+  .container .content h1 .spanish {
+    font-size: 30px;
+    color: #828282;
+  }
+  .container .content input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 47px;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #2D9CDB;
+  }
+  .container .content h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-left: 40px;
+  }
+  .container .content .radio1 {
+    height: 20px;
+    width: 13px;
+    border-radius: 50%;
+    border: none;
+    display: block;
+    position: absolute;
+    right: 85%;
+    bottom: 22.5%;
+  }
+  .container .content .radio2 {
+    height: 20px;
+    width: 13px;
+    border-radius: 50%;
+    border: none;
+    display: block;
+    position: absolute;
+    right: 85%;
+    bottom: 17%;
+  }
+  a {
+    text-decoration: none;
+    color: #2D9CDB;
+  }
+  a:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  button {
+    position: absolute;
+    width: 310px;
+    height: 50px;
+    right: 10%;
+    bottom: 30px;
+    border: none;
+    background: #FF7A05;
+  }
+  .col {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    position: relative;
+    overflow: hidden;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 480px;
+    left: 10px;
+    top: 50px;
+    background: rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .container .content {
+    font-family: Roboto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .content h1 {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 22px;
+    padding: 10px 0px  10px 0px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .container .content h1 .spanish {
+    font-size: 22px;
+    color: #828282;
+  }
+  .container .content input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 40px;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #2D9CDB;
+  }
+  .container .content h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-left: 40px;
+  }
+  .container .content .radio1 {
+    height: 20px;
+    width: 12.5px;
+    border-radius: 50%;
+    border: none;
+    display: block;
+    position: absolute;
+    right: 82%;
+    bottom: 23%;
+  }
+  .container .content .radio2 {
+    height: 20px;
+    width: 12.5px;
+    border-radius: 50%;
+    border: none;
+    display: block;
+    position: absolute;
+    right: 82%;
+    bottom: 18%;
+  }
+  a {
+    text-decoration: none;
+    color: #2D9CDB;
+  }
+  a:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  button {
+    position: absolute;
+    width: 247px;
+    height: 50px;
+    right: 10%;
+    bottom: 20px;
+    border: none;
+    background: #FF7A05;
+  }
+  .col {
+    display: -ms-grid;
+    display: grid;
+  }
+  #login {
+    font-weight: 500;
+    font-size: 14px;
+    color: #B7ACAC;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    position: relative;
+    overflow: hidden;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 400px;
+    left: 1px;
+    top: 50px;
+    background: rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .container .content {
+    font-family: Roboto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px 40px 0px 40px;
+  }
+  .container .content h1 {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .container .content h1 .spanish {
+    font-size: 18px;
+    color: #828282;
+  }
+  .container .content input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #2D9CDB;
+  }
+  .container .content h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    padding-left: 10px;
+  }
+  .container .content .radio1 {
+    height: 20px;
+    width: 10px;
+    display: block;
+    position: absolute;
+    right: 78%;
+    bottom: 25.3%;
+  }
+  .container .content .radio2 {
+    height: 20px;
+    width: 10px;
+    display: block;
+    position: absolute;
+    right: 78%;
+    bottom: 19.2%;
+  }
+  a {
+    text-decoration: none;
+    color: #2D9CDB;
+  }
+  a:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  button {
+    position: absolute;
+    width: 160px;
+    height: 40px;
+    right: 15%;
+    bottom: 20px;
+    border: none;
+    background: #FF7A05;
+  }
+  .col {
+    display: -ms-grid;
+    display: grid;
+  }
+  #login {
+    font-weight: 500;
+    font-size: 11px;
+    color: #B7ACAC;
+  }
+}
+/*# sourceMappingURL=signup.css.map */

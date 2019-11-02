@@ -1,0 +1,645 @@
+.imgOverLay {
+  background: #000 url(../img/fun1.jpg);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -1px;
+  top: 0px;
+}
+
+.imgOverLay::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(6, 44, 81, 0.67);
+  position: absolute;
+  height: 100%;
+  left: 1px;
+  top: 0px;
+  opacity: 1.7;
+}
+
+.container {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  left: 465px;
+  top: 140px;
+  background: rgba(0, 0, 0, 0.66);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.container .content {
+  font-family: Roboto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content h1 {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 38px;
+  padding: 20px 0px  10px 0px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.container .content h1 .spanish {
+  font-size: 40px;
+  color: #828282;
+}
+
+.container .content input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 60px;
+  color: rgba(255, 255, 255, 0.8);
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid #2D9CDB;
+}
+
+.container .content h3 {
+  width: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 60px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.radio {
+  height: 20px;
+  width: 16px;
+  border-radius: 50%;
+  border: none;
+  display: block;
+  position: absolute;
+  right: 28%;
+  bottom: 28.8%;
+}
+
+button {
+  position: absolute;
+  width: 320px;
+  height: 50px;
+  right: 15.8%;
+  cursor: pointer;
+  border: none;
+  background: #FF7A05;
+}
+
+#signup {
+  font-weight: 500;
+  font-size: 19px;
+  color: #B7ACAC;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    left: 440px;
+    top: 140px;
+    background: rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .container .content {
+    font-family: Roboto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .content h1 {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 38px;
+    padding: 20px 0px  10px 0px;
+    color: #FFFFFF;
+  }
+  .container .content h1 .spanish {
+    font-size: 40px;
+    color: #828282;
+  }
+  .container .content input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 60px;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #2D9CDB;
+  }
+  .container .content h3 {
+    width: auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 60px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .radio {
+    height: 20px;
+    width: 16px;
+    border-radius: 50%;
+    border: none;
+    display: block;
+    position: absolute;
+    right: 28%;
+    bottom: 28.8%;
+  }
+  button {
+    position: absolute;
+    width: 320px;
+    height: 50px;
+    right: 15.8%;
+    border: none;
+    background: #FF7A05;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    left: 300px;
+    top: 140px;
+    background: rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .container .content {
+    font-family: Roboto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .content h1 {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 38px;
+    padding: 20px 0px  10px 0px;
+    color: #FFFFFF;
+  }
+  .container .content h1 .spanish {
+    font-size: 40px;
+    color: #828282;
+  }
+  .container .content input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #2D9CDB;
+  }
+  .container .content h3 {
+    width: auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .radio {
+    height: 20px;
+    width: 18px;
+    border-radius: 50%;
+    border: 3px solid #00aeef;
+    display: block;
+    position: absolute;
+    right: 20%;
+    bottom: 34.5%;
+  }
+  button {
+    position: absolute;
+    width: 248px;
+    height: 40px;
+    right: 18%;
+    border: none;
+    background: #FF7A05;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    position: relative;
+    font-family: Roboto;
+    width: 380px;
+    height: 450px;
+    left: 270px;
+    top: 95px;
+    background: rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .container .content {
+    font-family: Roboto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .content h1 {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 40px;
+    padding: 20px 0px  20px 0px;
+    color: #FFFFFF;
+  }
+  .container .content h1 .spanish {
+    font-size: 40px;
+    color: #828282;
+  }
+  .container .content input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #2D9CDB;
+  }
+  .container .content h3 {
+    width: auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 60px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .radio {
+    height: 20px;
+    width: 17px;
+    border-radius: 50%;
+    border: 3px solid #00aeef;
+    display: block;
+    position: absolute;
+    right: 30%;
+    bottom: 30%;
+  }
+  button {
+    position: absolute;
+    width: 298px;
+    height: 48px;
+    right: 10%;
+    border: none;
+    background: #FF7A05;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    position: relative;
+    font-family: Roboto;
+    width: 300px;
+    height: 420px;
+    left: 200px;
+    top: 110px;
+    background: rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .container .content {
+    font-family: Roboto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .content h1 {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 37px;
+    padding: 18px 0px  18px 0px;
+    color: #FFFFFF;
+  }
+  .container .content h1 .spanish {
+    font-size: 38px;
+    color: #828282;
+  }
+  .container .content input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 47px;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #2D9CDB;
+  }
+  .container .content h3 {
+    width: auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 55px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .radio {
+    height: 20px;
+    width: 17px;
+    border-radius: 50%;
+    border: 3px solid #00aeef;
+    display: block;
+    position: absolute;
+    right: 27%;
+    bottom: 30%;
+  }
+  button {
+    position: absolute;
+    width: 247px;
+    height: 40px;
+    right: 9%;
+    border: none;
+    background: #FF7A05;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    position: relative;
+    font-family: Roboto;
+    width: 274px;
+    height: 400px;
+    left: 120px;
+    top: 46.6px;
+    background: rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .container .content {
+    font-family: Roboto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .content h1 {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 30px;
+    padding: 18px 0px  18px 0px;
+    color: #FFFFFF;
+  }
+  .container .content h1 .spanish {
+    font-size: 30px;
+    color: #828282;
+  }
+  .container .content input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 47px;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #2D9CDB;
+  }
+  .container .content h3 {
+    width: auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 55px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .radio {
+    height: 20px;
+    width: 16px;
+    border-radius: 50%;
+    border: 3px solid #00aeef;
+    display: block;
+    position: absolute;
+    right: 27%;
+    bottom: 32%;
+  }
+  button {
+    position: absolute;
+    width: 235px;
+    height: 40px;
+    right: 7%;
+    border: none;
+    background: #FF7A05;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    position: relative;
+    font-family: Roboto;
+    width: 274px;
+    height: 330px;
+    left: 90.5px;
+    top: 46.6px;
+    background: rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .container .content {
+    font-family: Roboto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .content h1 {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 30px;
+    padding: 10px 0px  10px 0px;
+    color: #FFFFFF;
+  }
+  .container .content h1 .spanish {
+    font-size: 30px;
+    color: #828282;
+  }
+  .container .content input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #2D9CDB;
+  }
+  .container .content h3 {
+    width: auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .radio {
+    height: 20px;
+    width: 13px;
+    border-radius: 50%;
+    border: 3px solid #00aeef;
+    display: block;
+    position: absolute;
+    right: 30%;
+    bottom: 27.6%;
+  }
+  button {
+    position: absolute;
+    width: 240px;
+    height: 40px;
+    right: 6%;
+    border: none;
+    background: #FF7A05;
+  }
+  #signup {
+    font-weight: 500;
+    font-size: 14px;
+    color: #B7ACAC;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    position: relative;
+    font-family: Roboto;
+    width: 182px;
+    height: 265px;
+    left: 30px;
+    top: 46.6px;
+    background: rgba(0, 0, 0, 0.66);
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .container .content {
+    font-family: Roboto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .content h1 {
+    font-style: normal;
+    font-weight: 50;
+    font-size: 20px;
+    padding: 10px 0px  10px 0px;
+    color: #FFFFFF;
+  }
+  .container .content h1 .spanish {
+    font-size: 20px;
+    color: #828282;
+  }
+  .container .content input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 0;
+    font-size: 10px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #2D9CDB;
+  }
+  .container .content h3 {
+    width: auto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .radio {
+    height: 20px;
+    width: 12px;
+    border: none;
+    border: 3px solid #00aeef;
+    display: block;
+    position: absolute;
+    right: 17%;
+    bottom: 35.5%;
+  }
+  button {
+    position: absolute;
+    width: 135px;
+    height: 35px;
+    right: 12%;
+    border: none;
+    background: #FF7A05;
+  }
+  #signup {
+    font-size: 12px;
+    color: #B7ACAC;
+  }
+}
+/*# sourceMappingURL=login.css.map */
